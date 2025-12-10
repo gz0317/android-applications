@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background: #f0f0f0;
+    background: linear-gradient(to bottom, #d3d3d3, #000000);
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,18 +10,23 @@ body {
 }
 
 .container {
-    background: white;
+    background: rgba(0, 0, 0, 0.7);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
-    width: 300px;
+    width: 320px;
 }
 
-input, button {
+label, select, input, button {
+    display: block;
     width: 100%;
-    padding: 8px;
     margin: 8px 0;
+    padding: 8px;
     box-sizing: border-box;
+}
+
+input, select {
+    border-radius: 5px;
+    border: none;
 }
 
 button {
@@ -28,8 +34,13 @@ button {
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 button:hover {
     opacity: 0.8;
+}
+
+#result {
+    margin-top: 15px;
 }
